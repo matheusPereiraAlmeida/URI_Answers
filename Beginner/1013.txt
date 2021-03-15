@@ -1,0 +1,13 @@
+static void Main(string[] args) 
+{ 
+	string[] values = new string[3];
+	values = Console.ReadLine().Split(' ');
+	double a = double.Parse(values[0].Replace(".", ","));
+	double b = double.Parse(values[1].Replace(".", ","));
+	double c = double.Parse(values[2].Replace(".", ","));
+
+	double maiorAB = (a + b + Math.Abs(a - b)) / 2;
+	double maior = (maiorAB + c + Math.Abs(maiorAB - c)) / 2;
+
+	Console.WriteLine(maior + " eh o maior");
+}

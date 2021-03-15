@@ -1,0 +1,10 @@
+static void Main(string[] args) 
+{ 
+	string firstName = Console.ReadLine();
+	double fixedSalary = Double.Parse(Console.ReadLine(), System.Globalization.CultureInfo.InvariantCulture);
+	double totalSalesMadeMonth = Double.Parse(Console.ReadLine(), System.Globalization.CultureInfo.InvariantCulture);
+	double bonus = totalSalesMadeMonth * 0.15;
+	double salaryWithBonus = bonus + fixedSalary;
+
+	Console.WriteLine("TOTAL = R$ " + Math.Round(salaryWithBonus, 2).ToString("F2").Replace(",", "."));
+}

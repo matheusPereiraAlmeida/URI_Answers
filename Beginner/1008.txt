@@ -1,0 +1,10 @@
+static void Main(string[] args) 
+{ 
+	int employeeID = Int32.Parse(Console.ReadLine());
+	int workedHours = Int32.Parse(Console.ReadLine());
+	double amountReceivedPerHour = Double.Parse(Console.ReadLine(), System.Globalization.CultureInfo.InvariantCulture);
+	double salary = workedHours * amountReceivedPerHour;
+
+	Console.WriteLine("NUMBER = " + employeeID);
+	Console.WriteLine("SALARY = U$ " + salary.ToString("F2").Replace(",","."));
+}

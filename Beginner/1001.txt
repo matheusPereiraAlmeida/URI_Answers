@@ -1,0 +1,8 @@
+static void Main(string[] args)
+{
+	var a = Int32.Parse(Console.ReadLine());
+	var b = Int32.Parse(Console.ReadLine());
+
+	var sum = a + b;
+	Console.WriteLine("X = " + sum);
+}

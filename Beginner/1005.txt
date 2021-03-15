@@ -1,0 +1,8 @@
+static void Main(string[] args) 
+{ 
+	double grade1 = Double.Parse(Console.ReadLine(), System.Globalization.CultureInfo.InvariantCulture);
+	double grade2 = Double.Parse(Console.ReadLine(), System.Globalization.CultureInfo.InvariantCulture);
+	double average = ((grade1 * 3.5) + (grade2 * 7.5)) / 11;
+
+	Console.WriteLine("MEDIA = " + Math.Round(average, 5).ToString("F5"));
+}

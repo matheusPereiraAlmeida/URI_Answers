@@ -1,0 +1,20 @@
+static void Main(string[] args) { 
+	int productCode;
+	int productQuantity;
+	double productPrice;
+	double total = 0;
+	string[] values = new string[3];
+	int count = 0;
+
+	while(count != 2)
+	{
+		values = Console.ReadLine().Split(' ');
+		productCode = int.Parse(values[0]);
+
+		productQuantity = int.Parse(values[1]);
+		productPrice = Double.Parse(values[2], System.Globalization.CultureInfo.InvariantCulture);
+		total += productQuantity * productPrice;
+		count++;
+	}
+	Console.WriteLine("VALOR A PAGAR: R$ " + Math.Round(total, 2).ToString("F2").Replace(",", "."));
+}

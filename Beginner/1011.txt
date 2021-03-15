@@ -1,0 +1,9 @@
+static void Main(string[] args) 
+{ 
+	double pi = 3.14159;
+	double radius = Double.Parse(Console.ReadLine(), System.Globalization.CultureInfo.InvariantCulture);
+	double sphereVolume = (4.0 / 3.0) * pi * (radius * radius * radius);
+
+	Console.WriteLine("VOLUME = " + Math.Round(sphereVolume, 3).ToString("F3").Replace(",", "."));
+
+}

@@ -1,0 +1,9 @@
+static void Main(string[] args) { 
+	double A = Double.Parse(Console.ReadLine());
+	double B = Convert.ToDouble(Console.ReadLine());
+	double C = Convert.ToDouble(Console.ReadLine());
+	double D = Convert.ToDouble(Console.ReadLine());
+	double diff = (A * B - C * D);
+
+	Console.WriteLine("DIFERENCA = " + diff);
+}
