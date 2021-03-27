@@ -1,0 +1,35 @@
+static void Main(string[] args) { 
+
+         string[] values = new string[2];
+            values = Console.ReadLine().Split(' ');
+            int value1 = int.Parse(values[0]);
+            int value2 = int.Parse(values[1]);
+            int value3 = int.Parse(values[2]);
+
+
+            int[] vector = { value1, value2, value3 };
+            int[] orderedVector = new int[3];
+            vector.CopyTo(orderedVector, 0);
+
+            for (int i = 0; i < orderedVector.Length; i++)
+            {
+                for (int j = i; j < orderedVector.Length; j++)
+                {
+                    if (orderedVector[j] < orderedVector[i])
+                    {
+                        var aux = orderedVector[i];
+                        orderedVector[i] = orderedVector[j];
+                        orderedVector[j] = aux;
+                    }
+                }
+            }
+
+            for (int i = 0; i < orderedVector.Length; i++)
+                Console.WriteLine(orderedVector[i]);
+
+            Console.WriteLine();
+
+            for (int i = 0; i < vector.Length; i++)
+                Console.WriteLine(vector[i]);
+
+    }

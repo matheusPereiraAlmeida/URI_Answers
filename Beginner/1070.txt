@@ -1,0 +1,17 @@
+static void Main(string[] args) { 
+
+          int value = int.Parse(Console.ReadLine());
+            int numbers = 0;
+
+            while (numbers < 6)
+            {
+                if(value % 2 != 0)
+                    {
+                        Console.WriteLine(value);
+                        numbers++;
+                    }
+                value++;
+
+            }
+
+    }

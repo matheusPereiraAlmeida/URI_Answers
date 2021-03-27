@@ -1,0 +1,31 @@
+static void Main(string[] args) { 
+
+        string[] values = new string[1];
+            values = Console.ReadLine().Split(' ');
+            int code = int.Parse(values[0]);
+            int qtns = int.Parse(values[1]);
+            double totalValue = 0;
+
+            if(code == 1)
+            {
+                totalValue = 4 * qtns;
+            }
+            else if(code == 2)
+            {
+                totalValue = 4.5 * qtns;
+            }else if(code == 3)
+            {
+                totalValue = 5 * qtns;
+            }
+            else if(code == 4)
+            {
+                totalValue = 2 * qtns;
+            }
+            else if(code == 5)
+            {
+                totalValue = 1.5 * qtns;
+            }
+
+            Console.WriteLine("Total: R$ " + totalValue.ToString("F2").Replace(",", "."));
+
+    }

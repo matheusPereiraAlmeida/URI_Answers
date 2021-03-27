@@ -1,0 +1,14 @@
+static void Main(string[] args) { 
+
+       double[] numbers = new double[6];
+            int totalPositiveNumbers = 0;
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                numbers[i] = double.Parse(Console.ReadLine(), System.Globalization.CultureInfo.InvariantCulture);
+                if (numbers[i] > 0)
+                    totalPositiveNumbers++;
+            }
+
+            Console.WriteLine(totalPositiveNumbers + " valores positivos");
+
+    }
